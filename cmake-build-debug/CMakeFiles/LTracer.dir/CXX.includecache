@@ -1,0 +1,36 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/luka/Documents/Programming/C++/LTracer/object.cpp
+object.h
+/home/luka/Documents/Programming/C++/LTracer/object.h
+
+/home/luka/Documents/Programming/C++/LTracer/object.h
+iostream
+-
+vector.h
+/home/luka/Documents/Programming/C++/LTracer/vector.h
+ray.h
+/home/luka/Documents/Programming/C++/LTracer/ray.h
+
+/home/luka/Documents/Programming/C++/LTracer/ray.h
+iostream
+-
+vector.h
+/home/luka/Documents/Programming/C++/LTracer/vector.h
+
+/home/luka/Documents/Programming/C++/LTracer/vector.h
+iostream
+-
+vector
+-
+cmath
+-
+random
+-
+
