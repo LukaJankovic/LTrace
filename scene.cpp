@@ -12,17 +12,17 @@ Intersection::Intersection() {}
 Intersection::Intersection(Object *object, Ray &ray, float t) : object(object), ray(ray), t(t) {}
 
 Scene::Scene() = default;
-Scene::Scene(const std::vector<Object *> &objList) : obj_list(objList) {}
+Scene::Scene(Object **objList) : obj_list(objList) {}
 
 bool Scene::intersect_ray(Ray r, Intersection &intersection) {
     bool hit = false;
     Intersection closest(nullptr, r, MAXFLOAT);
 
-    for (Object *object : obj_list) {
-        float intersect_t = object->intersect(r);
+    for (int i = 0; i < size; i++) {
+        float intersect_t = obj_list[i]->intersect(r);
         if (intersect_t > 0 & intersect_t < closest.t) {
             hit = true;
-            closest = Intersection(object, r, intersect_t);
+            closest = Intersection(obj_list[i], r, intersect_t);
         }
     }
 

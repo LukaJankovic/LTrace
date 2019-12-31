@@ -26,10 +26,11 @@ public:
 
 class Scene {
 public:
-    std::vector<Object *> obj_list;
+    Object **obj_list;
+    int size;
 
     Scene();
-    Scene(const std::vector<Object *> &objList);
+    Scene(Object **objList);
 
     static Vector<3> random_unit_vec();
     bool intersect_ray(Ray r, Intersection &intersection);

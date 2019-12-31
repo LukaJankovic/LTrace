@@ -34,19 +34,19 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /files/Applications/CLion/bin/cmake/linux/bin/cmake
+CMAKE_COMMAND = /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake
 
 # The command to remove a file.
-RM = /files/Applications/CLion/bin/cmake/linux/bin/cmake -E remove -f
+RM = /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E remove -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/luka/Documents/Programming/C++/LTrace
+CMAKE_SOURCE_DIR = /Users/luka/Documents/Programming/C++/LTrace
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/luka/Documents/Programming/C++/LTrace/cmake-build-debug
+CMAKE_BINARY_DIR = /Users/luka/Documents/Programming/C++/LTrace/cmake-build-debug
 
 # Include any dependencies generated for this target.
 include CMakeFiles/LTracer.dir/depend.make
@@ -59,42 +59,42 @@ include CMakeFiles/LTracer.dir/flags.make
 
 CMakeFiles/LTracer.dir/main.cpp.o: CMakeFiles/LTracer.dir/flags.make
 CMakeFiles/LTracer.dir/main.cpp.o: ../main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/luka/Documents/Programming/C++/LTrace/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/LTracer.dir/main.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/LTracer.dir/main.cpp.o -c /home/luka/Documents/Programming/C++/LTrace/main.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/luka/Documents/Programming/C++/LTrace/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/LTracer.dir/main.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/LTracer.dir/main.cpp.o -c /Users/luka/Documents/Programming/C++/LTrace/main.cpp
 
 CMakeFiles/LTracer.dir/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/LTracer.dir/main.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/luka/Documents/Programming/C++/LTrace/main.cpp > CMakeFiles/LTracer.dir/main.cpp.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/luka/Documents/Programming/C++/LTrace/main.cpp > CMakeFiles/LTracer.dir/main.cpp.i
 
 CMakeFiles/LTracer.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/LTracer.dir/main.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/luka/Documents/Programming/C++/LTrace/main.cpp -o CMakeFiles/LTracer.dir/main.cpp.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/luka/Documents/Programming/C++/LTrace/main.cpp -o CMakeFiles/LTracer.dir/main.cpp.s
 
 CMakeFiles/LTracer.dir/object.cpp.o: CMakeFiles/LTracer.dir/flags.make
 CMakeFiles/LTracer.dir/object.cpp.o: ../object.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/luka/Documents/Programming/C++/LTrace/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/LTracer.dir/object.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/LTracer.dir/object.cpp.o -c /home/luka/Documents/Programming/C++/LTrace/object.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/luka/Documents/Programming/C++/LTrace/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/LTracer.dir/object.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/LTracer.dir/object.cpp.o -c /Users/luka/Documents/Programming/C++/LTrace/object.cpp
 
 CMakeFiles/LTracer.dir/object.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/LTracer.dir/object.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/luka/Documents/Programming/C++/LTrace/object.cpp > CMakeFiles/LTracer.dir/object.cpp.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/luka/Documents/Programming/C++/LTrace/object.cpp > CMakeFiles/LTracer.dir/object.cpp.i
 
 CMakeFiles/LTracer.dir/object.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/LTracer.dir/object.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/luka/Documents/Programming/C++/LTrace/object.cpp -o CMakeFiles/LTracer.dir/object.cpp.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/luka/Documents/Programming/C++/LTrace/object.cpp -o CMakeFiles/LTracer.dir/object.cpp.s
 
 CMakeFiles/LTracer.dir/scene.cpp.o: CMakeFiles/LTracer.dir/flags.make
 CMakeFiles/LTracer.dir/scene.cpp.o: ../scene.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/luka/Documents/Programming/C++/LTrace/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/LTracer.dir/scene.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/LTracer.dir/scene.cpp.o -c /home/luka/Documents/Programming/C++/LTrace/scene.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/luka/Documents/Programming/C++/LTrace/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/LTracer.dir/scene.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/LTracer.dir/scene.cpp.o -c /Users/luka/Documents/Programming/C++/LTrace/scene.cpp
 
 CMakeFiles/LTracer.dir/scene.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/LTracer.dir/scene.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/luka/Documents/Programming/C++/LTrace/scene.cpp > CMakeFiles/LTracer.dir/scene.cpp.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/luka/Documents/Programming/C++/LTrace/scene.cpp > CMakeFiles/LTracer.dir/scene.cpp.i
 
 CMakeFiles/LTracer.dir/scene.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/LTracer.dir/scene.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/luka/Documents/Programming/C++/LTrace/scene.cpp -o CMakeFiles/LTracer.dir/scene.cpp.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/luka/Documents/Programming/C++/LTrace/scene.cpp -o CMakeFiles/LTracer.dir/scene.cpp.s
 
 # Object files for target LTracer
 LTracer_OBJECTS = \
@@ -110,7 +110,7 @@ LTracer: CMakeFiles/LTracer.dir/object.cpp.o
 LTracer: CMakeFiles/LTracer.dir/scene.cpp.o
 LTracer: CMakeFiles/LTracer.dir/build.make
 LTracer: CMakeFiles/LTracer.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/luka/Documents/Programming/C++/LTrace/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX executable LTracer"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/luka/Documents/Programming/C++/LTrace/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX executable LTracer"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/LTracer.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -123,6 +123,6 @@ CMakeFiles/LTracer.dir/clean:
 .PHONY : CMakeFiles/LTracer.dir/clean
 
 CMakeFiles/LTracer.dir/depend:
-	cd /home/luka/Documents/Programming/C++/LTrace/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/luka/Documents/Programming/C++/LTrace /home/luka/Documents/Programming/C++/LTrace /home/luka/Documents/Programming/C++/LTrace/cmake-build-debug /home/luka/Documents/Programming/C++/LTrace/cmake-build-debug /home/luka/Documents/Programming/C++/LTrace/cmake-build-debug/CMakeFiles/LTracer.dir/DependInfo.cmake --color=$(COLOR)
+	cd /Users/luka/Documents/Programming/C++/LTrace/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/luka/Documents/Programming/C++/LTrace /Users/luka/Documents/Programming/C++/LTrace /Users/luka/Documents/Programming/C++/LTrace/cmake-build-debug /Users/luka/Documents/Programming/C++/LTrace/cmake-build-debug /Users/luka/Documents/Programming/C++/LTrace/cmake-build-debug/CMakeFiles/LTracer.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/LTracer.dir/depend
 

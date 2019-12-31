@@ -5,7 +5,7 @@
 
 const int WIDTH = 2000;
 const int HEIGHT = 1000;
-const int SAMPLES = 5;
+const int SAMPLES = 10;
 
 Vector<3> cast_ray(Scene s, Ray r) {
     Intersection a;
@@ -21,43 +21,24 @@ Vector<3> cast_ray(Scene s, Ray r) {
 
 int main() {
 
-    std::vector<Object *> objs;
-
-    auto *sp = new Sphere({0, 0, 1}, 0.5);
+    auto sp = new Sphere({0, 0, 1}, 0.5);
     sp->material.diffuse_color = {0, 1, 1};
-    objs.push_back(sp);
 
     auto *sp2 = new Sphere({0, -100.5, 1}, 100);
     sp2->material.diffuse_color = {1, 0, 0};
-    objs.push_back(sp2);
 
-    auto *pl = new Plane({-2, 0, 0}, {1, 0, 0});
-    pl->material.diffuse_color = {1, 1, 1};
-    //objs.push_back(pl);
-
-    auto *pl2 = new Plane({2, 0, 0,}, {-1, 0, 0});
-    pl2->material.diffuse_color = {1, 1, 1,};
-    //objs.push_back(pl2);
-
-    auto *pl3 = new Plane({0, 0, 4}, {0, 0, 60});
-    pl3->material.diffuse_color = {1, 1, 1};
-    //objs.push_back(pl3);
-
-    auto *pl4 = new Plane({0, -2, 0}, {0, 1, 0});
-    pl4->material.diffuse_color = {1, 0.2, 0.2};
-    //objs.push_back(pl4);
-
-    auto *pl5 = new Plane({0, 2, 0}, {0, -1, 0});
-    pl5->material.diffuse_color = {0.3, 0.5, 1};
-    //objs.push_back(pl5);
+    Object *objs[2];
+    objs[0] = sp;
+    objs[1] = sp2;
 
     Scene s(objs);
+    s.size = 2;
 
     std::ofstream stream("out.ppm");
     stream << "P3\n" << WIDTH << " " << HEIGHT << "\n255\n";
 
     for (int i = 0; i < HEIGHT; i++) {
-        //std::cout << "Row: " << i << std::endl;
+        std::cout << "Row: " << i << std::endl;
         for (int j = 0; j < WIDTH; j++) {
 
             Vector<3> color{};
@@ -79,6 +60,8 @@ int main() {
                    << static_cast<int>(255.59 * sqrt(color[2])) << "\n";
         }
     }
+
+    stream.close();
 
     return 0;
 }
