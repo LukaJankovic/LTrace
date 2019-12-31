@@ -16,10 +16,10 @@ float Sphere::intersect(Ray r) {
     float discriminant = pow(b, 2) - a * c;
 
     if (discriminant > 0) {
-        float t0 = (-b - sqrt(discriminant) / a);
-        float t1 = (-b + sqrt(discriminant) / a);
+        float t0 = (-b - sqrt(discriminant)) / a;
+        float t1 = (-b + sqrt(discriminant)) / a;
 
-        return t0 > t1 ? t0 : t1;
+        return t0 > t1 ? t1 : t0;
     }
     return -1;
 }
@@ -27,7 +27,7 @@ float Sphere::intersect(Ray r) {
 Sphere::Sphere(const Vector<3> &center, float radius) : center(center), radius(radius) {}
 
 Vector<3> Sphere::normal_at_point(Vector<3> p) {
-    return (p - center) / radius;
+    return (p - center).normalize();
 }
 
 Plane::Plane(const Vector<3> &origin, const Vector<3> &normal) : origin(origin), normal(normal) {}

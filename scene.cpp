@@ -9,9 +9,7 @@
 
 Intersection::Intersection() {}
 
-Intersection::Intersection(Object *object, const Ray &ray, float t) : object(object), ray(ray), t(t) {
-    this->position = static_cast<Vector<3>>(ray.origin) + ray.direction * t;
-}
+Intersection::Intersection(Object *object, Ray &ray, float t) : object(object), ray(ray), t(t) {}
 
 Scene::Scene() = default;
 Scene::Scene(const std::vector<Object *> &objList) : obj_list(objList) {}
@@ -30,6 +28,7 @@ bool Scene::intersect_ray(Ray r, Intersection &intersection) {
 
     if (hit) {
         intersection = closest;
+        intersection.position = intersection.ray.extend(intersection.t);
         intersection.normal = intersection.object->normal_at_point(intersection.position);
     }
 
@@ -37,13 +36,15 @@ bool Scene::intersect_ray(Ray r, Intersection &intersection) {
 }
 
 Vector<3> Scene::random_unit_vec() {
-
     Vector<3> vec{};
+
     do {
         vec = (Vector<3>{static_cast<float>(drand48()),
                          static_cast<float>(drand48()),
                          static_cast<float>(drand48())} * 2.f) - Vector<3>{1, 1, 1};
-    } while (vec.length_squared() > 1);
+    } while (vec.length_squared() >= 1);
+
+    //vec = vec.normalize();
 
     return vec;
 }

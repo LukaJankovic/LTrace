@@ -1,4 +1,4 @@
-/files/Applications/CLion/bin/cmake/linux/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" /home/luka/Documents/Programming/C++/LTracer
+/files/Applications/CLion/bin/cmake/linux/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" /home/luka/Documents/Programming/C++/LTrace
 -- Configuring done
 -- Generating done
--- Build files have been written to: /home/luka/Documents/Programming/C++/LTracer/cmake-build-debug
+-- Build files have been written to: /home/luka/Documents/Programming/C++/LTrace/cmake-build-debug

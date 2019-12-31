@@ -21,7 +21,7 @@ public:
     float  t;
 
     Intersection();
-    Intersection(Object *object, const Ray &ray, float t);
+    Intersection(Object *object, Ray &ray, float t);
 };
 
 class Scene {

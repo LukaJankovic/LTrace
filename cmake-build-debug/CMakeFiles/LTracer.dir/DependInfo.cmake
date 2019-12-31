@@ -4,9 +4,9 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/luka/Documents/Programming/C++/LTracer/main.cpp" "/home/luka/Documents/Programming/C++/LTracer/cmake-build-debug/CMakeFiles/LTracer.dir/main.cpp.o"
-  "/home/luka/Documents/Programming/C++/LTracer/object.cpp" "/home/luka/Documents/Programming/C++/LTracer/cmake-build-debug/CMakeFiles/LTracer.dir/object.cpp.o"
-  "/home/luka/Documents/Programming/C++/LTracer/scene.cpp" "/home/luka/Documents/Programming/C++/LTracer/cmake-build-debug/CMakeFiles/LTracer.dir/scene.cpp.o"
+  "/home/luka/Documents/Programming/C++/LTrace/main.cpp" "/home/luka/Documents/Programming/C++/LTrace/cmake-build-debug/CMakeFiles/LTracer.dir/main.cpp.o"
+  "/home/luka/Documents/Programming/C++/LTrace/object.cpp" "/home/luka/Documents/Programming/C++/LTrace/cmake-build-debug/CMakeFiles/LTracer.dir/object.cpp.o"
+  "/home/luka/Documents/Programming/C++/LTrace/scene.cpp" "/home/luka/Documents/Programming/C++/LTrace/cmake-build-debug/CMakeFiles/LTracer.dir/scene.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

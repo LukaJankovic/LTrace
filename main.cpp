@@ -11,10 +11,7 @@ Vector<3> cast_ray(Scene s, Ray r) {
     Intersection a;
     if (s.intersect_ray(r, a)) {
         Vector<3> target = a.position + a.normal + s.random_unit_vec();
-
-        Ray nr(a.position, target - a.position);
-
-        return cast_ray(s, nr) * 0.5f;
+        return cast_ray(s, Ray(a.position, target - a.position)) * 0.5f;
     } else {
         Vector<3> unit_dir = r.direction.normalize();
         float t = 0.5f * (unit_dir[1] + 1.0f);
@@ -60,7 +57,7 @@ int main() {
     stream << "P3\n" << WIDTH << " " << HEIGHT << "\n255\n";
 
     for (int i = 0; i < HEIGHT; i++) {
-
+        //std::cout << "Row: " << i << std::endl;
         for (int j = 0; j < WIDTH; j++) {
 
             Vector<3> color{};
@@ -75,7 +72,7 @@ int main() {
                 color += cast_ray(s, r);
             }
 
-            color = color / SAMPLES;
+            color /= static_cast<float>(SAMPLES);
 
             stream << static_cast<int>(255.59 * sqrt(color[0])) << " "
                    << static_cast<int>(255.59 * sqrt(color[1])) << " "

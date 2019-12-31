@@ -6,25 +6,39 @@
 
 #IncludeRegexTransform: 
 
-/home/luka/Documents/Programming/C++/LTracer/object.cpp
-object.h
-/home/luka/Documents/Programming/C++/LTracer/object.h
+/home/luka/Documents/Programming/C++/LTrace/main.cpp
+iostream
+-
+fstream
+-
+scene.h
+/home/luka/Documents/Programming/C++/LTrace/scene.h
 
-/home/luka/Documents/Programming/C++/LTracer/object.h
+/home/luka/Documents/Programming/C++/LTrace/object.h
 iostream
 -
 vector.h
-/home/luka/Documents/Programming/C++/LTracer/vector.h
+/home/luka/Documents/Programming/C++/LTrace/vector.h
 ray.h
-/home/luka/Documents/Programming/C++/LTracer/ray.h
+/home/luka/Documents/Programming/C++/LTrace/ray.h
 
-/home/luka/Documents/Programming/C++/LTracer/ray.h
+/home/luka/Documents/Programming/C++/LTrace/ray.h
 iostream
 -
 vector.h
-/home/luka/Documents/Programming/C++/LTracer/vector.h
+/home/luka/Documents/Programming/C++/LTrace/vector.h
 
-/home/luka/Documents/Programming/C++/LTracer/vector.h
+/home/luka/Documents/Programming/C++/LTrace/scene.h
+iostream
+-
+vector.h
+/home/luka/Documents/Programming/C++/LTrace/vector.h
+ray.h
+/home/luka/Documents/Programming/C++/LTrace/ray.h
+object.h
+/home/luka/Documents/Programming/C++/LTrace/object.h
+
+/home/luka/Documents/Programming/C++/LTrace/vector.h
 iostream
 -
 vector

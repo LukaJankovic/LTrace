@@ -18,32 +18,6 @@ public:
     float v[vector_size]{};
     std::size_t dimension = vector_size;
 
-    Vector<vector_size> operator+(Vector<vector_size> u) {
-
-        for (int i = 0; i < this->dimension; i++) {
-            v[i] = v[i] + u[i];
-        }
-
-        return *this;
-    };
-
-    Vector<vector_size> operator-(Vector<vector_size> u) {
-
-        for (int i = 0; i < this->dimension; i++) {
-            v[i] = v[i] - u[i];
-        }
-
-        return *this;
-    };
-
-    Vector operator+=(Vector<vector_size> u) {
-        return *this + u;
-    }
-
-    Vector operator-=(Vector<vector_size> u) {
-        return *this - u;
-    }
-
     float operator[](int i) const {
         return v[i];
     };
@@ -51,6 +25,38 @@ public:
     float &operator[](int i) {
         return v[i];
     };
+
+    Vector<vector_size> &operator+=(Vector<vector_size> u) {
+        for (int i = 0; i < vector_size; i++) {
+            v[i] += u[i];
+        }
+
+        return *this;
+    }
+
+    Vector<vector_size> &operator-=(Vector<vector_size> u) {
+        for (int i = 0; i < vector_size; i++) {
+            v[i] -= u[i];
+        }
+
+        return *this;
+    }
+
+    Vector<vector_size> &operator*=(float t) {
+        for (int i = 0; i < vector_size; i++) {
+            v[i] *= t;
+        }
+
+        return *this;
+    }
+
+    Vector<vector_size> &operator/=(float t) {
+        for (int i = 0; i < vector_size; i++) {
+            v[i] /= t;
+        }
+
+        return *this;
+    }
 
     friend std::ostream &operator<<(std::ostream &out, const Vector<vector_size> &u) {
         out << "[";
@@ -66,13 +72,7 @@ public:
     };
 
     float length_squared() {
-        float s = 0.f;
-
-        for (int i = 0; i < dimension; i++) {
-            s += pow(v[i], 2);
-        }
-
-        return s;
+        return dot(*this, *this);
     }
 
     float length() {
@@ -83,6 +83,25 @@ public:
         return *this / length();
     }
 };
+
+template<std::size_t vector_size>
+Vector<vector_size> operator+(Vector<vector_size> u, Vector<vector_size> v) {
+    Vector<vector_size> w;
+
+    if (u.dimension != v.dimension)
+        throw std::invalid_argument("Vector dimension mismatch");
+
+    for (int i = 0; i < u.dimension; i++) {
+        w[i] = v[i] + u[i];
+    }
+
+    return w;
+};
+
+template<std::size_t vector_size>
+Vector<vector_size> operator-(Vector<vector_size> u, Vector<vector_size> v) {
+    return u + (-1 * v);
+}
 
 template<std::size_t vector_size>
 Vector<vector_size> operator*(Vector<vector_size> v, float d) {
@@ -105,21 +124,6 @@ Vector<vector_size> operator/(Vector<vector_size> v, float d) {
     }
 
     return v;
-}
-
-template<std::size_t vector_size>
-Vector<vector_size> operator*=(Vector<vector_size> v, float d) {
-    return v * d;
-}
-
-template<std::size_t vector_size>
-Vector<vector_size> operator*=(float d, Vector<vector_size> v) {
-    return v * d;
-}
-
-template<std::size_t vector_size>
-Vector<vector_size> operator/=(Vector<vector_size> v, float d) {
-    return v / d;
 }
 
 template<std::size_t vector_size>

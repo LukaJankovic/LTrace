@@ -1,3 +1,3 @@
-/home/luka/Documents/Programming/C++/LTracer/cmake-build-debug/CMakeFiles/rebuild_cache.dir
-/home/luka/Documents/Programming/C++/LTracer/cmake-build-debug/CMakeFiles/LTracer.dir
-/home/luka/Documents/Programming/C++/LTracer/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/luka/Documents/Programming/C++/LTrace/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/home/luka/Documents/Programming/C++/LTrace/cmake-build-debug/CMakeFiles/LTracer.dir
+/home/luka/Documents/Programming/C++/LTrace/cmake-build-debug/CMakeFiles/edit_cache.dir
