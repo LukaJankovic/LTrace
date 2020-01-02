@@ -41,31 +41,30 @@ int main() {
     std::ofstream stream("out.ppm");
     stream << "P3\n" << WIDTH << " " << HEIGHT << "\n255\n";
 
+#pragma omp parallel for
     for (int i = 0; i < HEIGHT; i++) {
-
-        std::cout << "Row: " << i << "\n";
 
         for (int j = 0; j < WIDTH; j++) {
 
-                Vector<3> color{};
+            Vector<3> color{};
 
-                for (int sam = 0; sam < SAMPLES; sam++) {
+            for (int sam = 0; sam < SAMPLES; sam++) {
 
-                    float u = (2.f * static_cast<float>(j + drand48()) - WIDTH) / HEIGHT;
-                    float v = (-2.f * static_cast<float>(i + drand48()) + HEIGHT) / HEIGHT;
+                float u = (2.f * static_cast<float>(j + drand48()) - WIDTH) / HEIGHT;
+                float v = (-2.f * static_cast<float>(i + drand48()) + HEIGHT) / HEIGHT;
 
-                    Ray r({0, 0, 0}, {u, v, 1});
+                Ray r({0, 0, 0}, {u, v, 1});
 
-                    color += cast_ray(s, r);
-                }
+                color += cast_ray(s, r);
+            }
 
-                color /= static_cast<float>(SAMPLES);
+            color /= static_cast<float>(SAMPLES);
 
-                int idx = i * WIDTH * 3 + j * 3;
+            int idx = i * WIDTH * 3 + j * 3;
 
-                fb[idx] = static_cast<int>(255.59 * sqrt(color[0]));
-                fb[idx + 1] = static_cast<int>(255.59 * sqrt(color[1]));
-                fb[idx + 2] = static_cast<int>(255.59 * sqrt(color[2]));
+            fb[idx] = static_cast<int>(255.59 * sqrt(color[0]));
+            fb[idx + 1] = static_cast<int>(255.59 * sqrt(color[1]));
+            fb[idx + 2] = static_cast<int>(255.59 * sqrt(color[2]));
         }
     }
 

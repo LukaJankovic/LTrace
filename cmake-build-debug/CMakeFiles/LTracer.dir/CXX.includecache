@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/Users/luka/Documents/Programming/C++/LTrace/main.cpp
+/home/luka/Documents/Programming/C++/LTrace/main.cpp
 iostream
 -
 fstream
@@ -14,33 +14,33 @@ fstream
 future
 -
 scene.h
-/Users/luka/Documents/Programming/C++/LTrace/scene.h
+/home/luka/Documents/Programming/C++/LTrace/scene.h
 
-/Users/luka/Documents/Programming/C++/LTrace/object.h
+/home/luka/Documents/Programming/C++/LTrace/object.h
 iostream
 -
 vector.h
-/Users/luka/Documents/Programming/C++/LTrace/vector.h
+/home/luka/Documents/Programming/C++/LTrace/vector.h
 ray.h
-/Users/luka/Documents/Programming/C++/LTrace/ray.h
+/home/luka/Documents/Programming/C++/LTrace/ray.h
 
-/Users/luka/Documents/Programming/C++/LTrace/ray.h
+/home/luka/Documents/Programming/C++/LTrace/ray.h
 iostream
 -
 vector.h
-/Users/luka/Documents/Programming/C++/LTrace/vector.h
+/home/luka/Documents/Programming/C++/LTrace/vector.h
 
-/Users/luka/Documents/Programming/C++/LTrace/scene.h
+/home/luka/Documents/Programming/C++/LTrace/scene.h
 iostream
 -
 vector.h
-/Users/luka/Documents/Programming/C++/LTrace/vector.h
+/home/luka/Documents/Programming/C++/LTrace/vector.h
 ray.h
-/Users/luka/Documents/Programming/C++/LTrace/ray.h
+/home/luka/Documents/Programming/C++/LTrace/ray.h
 object.h
-/Users/luka/Documents/Programming/C++/LTrace/object.h
+/home/luka/Documents/Programming/C++/LTrace/object.h
 
-/Users/luka/Documents/Programming/C++/LTrace/vector.h
+/home/luka/Documents/Programming/C++/LTrace/vector.h
 iostream
 -
 vector

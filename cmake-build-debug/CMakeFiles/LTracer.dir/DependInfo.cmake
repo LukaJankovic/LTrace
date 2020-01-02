@@ -4,11 +4,11 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/Users/luka/Documents/Programming/C++/LTrace/main.cpp" "/Users/luka/Documents/Programming/C++/LTrace/cmake-build-debug/CMakeFiles/LTracer.dir/main.cpp.o"
-  "/Users/luka/Documents/Programming/C++/LTrace/object.cpp" "/Users/luka/Documents/Programming/C++/LTrace/cmake-build-debug/CMakeFiles/LTracer.dir/object.cpp.o"
-  "/Users/luka/Documents/Programming/C++/LTrace/scene.cpp" "/Users/luka/Documents/Programming/C++/LTrace/cmake-build-debug/CMakeFiles/LTracer.dir/scene.cpp.o"
+  "/home/luka/Documents/Programming/C++/LTrace/main.cpp" "/home/luka/Documents/Programming/C++/LTrace/cmake-build-debug/CMakeFiles/LTracer.dir/main.cpp.o"
+  "/home/luka/Documents/Programming/C++/LTrace/object.cpp" "/home/luka/Documents/Programming/C++/LTrace/cmake-build-debug/CMakeFiles/LTracer.dir/object.cpp.o"
+  "/home/luka/Documents/Programming/C++/LTrace/scene.cpp" "/home/luka/Documents/Programming/C++/LTrace/cmake-build-debug/CMakeFiles/LTracer.dir/scene.cpp.o"
   )
-set(CMAKE_CXX_COMPILER_ID "AppleClang")
+set(CMAKE_CXX_COMPILER_ID "GNU")
 
 # The include file search paths:
 set(CMAKE_CXX_TARGET_INCLUDE_PATH
