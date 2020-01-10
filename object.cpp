@@ -6,6 +6,8 @@
 
 Material::Material() {}
 
+Sphere::Sphere(const Vector<3> &center, float radius) : center(center), radius(radius) {}
+
 float Sphere::intersect(Ray r) {
 
     Vector<3> OC = r.origin - center;
@@ -24,8 +26,6 @@ float Sphere::intersect(Ray r) {
     return -1;
 }
 
-Sphere::Sphere(const Vector<3> &center, float radius) : center(center), radius(radius) {}
-
 Vector<3> Sphere::normal_at_point(Vector<3> p) {
     return (p - center).normalize();
 }
@@ -33,12 +33,13 @@ Vector<3> Sphere::normal_at_point(Vector<3> p) {
 Plane::Plane(const Vector<3> &origin, const Vector<3> &normal) : origin(origin), normal(normal) {}
 
 float Plane::intersect(Ray r) {
-    float denom = dot(r.direction, normal);
+    float parallel = dot(r.direction, normal);
 
-    if (denom == 0)
+    if (parallel == 0)
         return -1.f;
-    else
-        return dot(origin - r.origin, normal) / denom;
+    else {
+        return dot(origin - r.origin, normal) / parallel;
+    }
 }
 
 Vector<3> Plane::normal_at_point(Vector<3> p) {

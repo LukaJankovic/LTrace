@@ -44,7 +44,5 @@ Vector<3> Scene::random_unit_vec() {
                          static_cast<float>(drand48())} * 2.f) - Vector<3>{1, 1, 1};
     } while (vec.length_squared() >= 1);
 
-    //vec = vec.normalize();
-
     return vec;
 }

@@ -13,6 +13,9 @@
 class Material {
 public:
     Vector<3> diffuse_color;
+    Vector<3> diffuse_glow;
+    
+    bool glow;
 
     Material();
 };

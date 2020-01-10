@@ -49,6 +49,14 @@ public:
 
         return *this;
     }
+    
+    Vector<vector_size> &operator*=(Vector<vector_size> u) {
+        for (int i = 0; i < vector_size; i++) {
+            v[i] *= u[i];
+        }
+
+        return *this;
+    }
 
     Vector<vector_size> &operator/=(float t) {
         for (int i = 0; i < vector_size; i++) {
@@ -100,6 +108,7 @@ Vector<vector_size> operator+(Vector<vector_size> u, Vector<vector_size> v) {
 
 template<std::size_t vector_size>
 Vector<vector_size> operator-(Vector<vector_size> u, Vector<vector_size> v) {
+
     return u + (-1 * v);
 }
 
@@ -115,6 +124,17 @@ Vector<vector_size> operator*(Vector<vector_size> v, float d) {
 template<std::size_t vector_size>
 Vector<vector_size> operator*(float d, Vector<vector_size> v) {
     return v * d;
+}
+
+template<std::size_t vector_size>
+Vector<vector_size> operator*(Vector<vector_size> u, Vector<vector_size> v) {
+    Vector<vector_size> w;
+    
+    for (int i = 0; i < vector_size; i++) {
+        w[i] = u[i] * v[i];
+    }
+    
+    return w;
 }
 
 template<std::size_t vector_size>
